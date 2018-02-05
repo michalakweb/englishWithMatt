@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mateusz Michalak">
+        <meta name="description" content="English with Matt">
+        <title>English with Matt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/styles.css" type="text/css" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="logocontainer"> 
+                <img src="images/image2.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" id="linkaboutme"> <img src="images/icons8-User-50.png" width="70%"> About me</a></li>
+                    <li><a href="#" id="linkcourses"> <img src="images/icons8-Class-50.png" width="80%"> Gallery</a></li>
+                </ul>
+            </nav>
+            <div style="clear: both"></div>
+        </header>
+    
+        <main>
+            <section id="aboutme" class="active">   
+                
+                <div class="background">
+                    <h1>Hello, my name is Matt and I am a TEFL certified English teacher.</h1> 
+                    <article>
+
+                        <h2>Let’s get talking!</h2>
+                        <p>I'm looking for a full-time position as an English teacher in Vietnam.
+                            If you're interested, please
+                            <strong ><a id="specialLink" href="index.html#course2"> 
+                                   
+                                contact me</a></strong> for more information.</p> 
+                    </article>
+                    <div class="teacherphoto">
+                        <img src="images/teachermobile.png">
+                    </div>
+                </div>
+                
+                
+                
+                <div class="videocontainer">
+                    <iframe width="100%" src="https://www.youtube.com/embed/9gwUgbZOUDQ?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                
+            </section>
+            
+            <section id="courses">
+                
+                <div class="course1">
+                    <div class="courseheader">
+                        <div class="imgbox">
+                            <img src="images/alphabet.png">
+                        </div>
+                        <div class="titlebox">
+                            <h3>Photos &amp; demo</h3>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    
+                    <div class="descriptionbox">
+                        <a target="_blank" href="/images/class1.jpg">
+							<img id="class1" src="images/class1.jpg" alt="">
+                        </a>
+                        <a target="_blank" href="/images/class2.jpg">
+							<img id="class2" src="images/class2.jpg" alt="">
+                        </a>
+                        
+						<iframe id="demo" width="560" height="315" src="https://www.youtube.com/embed/3kJW9aRQf3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+                
+                
+                <div class="course2" id="course2">
+                     <div class="courseheader">
+                          <div class="imgbox">
+                            <img src="images/conversation@2x.png">
+                        </div>
+                        <div class="titlebox">
+                            <h3>Contact me</h3>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div class="descriptionbox">
+						<p>Email: michalakweb@gmail.com <br> <br> Phone: +84 868 415 132  <br> <br>Wechat: mateuszmichalak9125</p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+                
+
+            </section>       
+            
+        </main>
+        
+        <footer>
+            
+        </footer>
+        
+        <script>
+            var tabs = document.querySelectorAll('nav li a');
+            var panels = document.querySelectorAll('main section');
+            var aboutme = document.getElementById('aboutme');
+            var courses = document.getElementById('courses');
+			var specialLink = document.getElementById('specialLink')
+            
+            courses.style.display="none";
+            
+            for(i = 0; i < tabs.length; i++) {
+              var tab = tabs[i];
+              setTabHandler(tab, i);
+            }
+            function setTabHandler(tab, tabPos) {
+              tab.onclick = function() {
+                for(i = 0; i < tabs.length; i++) {
+                  tabs[i].className = '';
+                }
+                tab.className = 'active';
+                for(i = 0; i < panels.length; i++) {
+                  panels[i].className = 'notactive';
+                  if(aboutme.className == 'notactive') {aboutme.style.display="none";}
+                  if (courses.className == 'notactive') {courses.style.display="none";}
+                }
+                panels[tabPos].className = 'active';
+                if(aboutme.className == 'active') {aboutme.style.display="initial";}
+                if (courses.className == 'active') {courses.style.display="initial";}
+              }
+              
+            }
+			
+			specialLink.addEventListener('click', function() {
+				aboutme.className = 'notactive';
+				aboutme.style.display = 'none';
+				courses.className = 'active';
+				courses.style.display = 'initial';
+			})
+</script>
+        
+    </body>
+
+</html>

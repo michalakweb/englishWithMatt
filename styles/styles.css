@@ -1,0 +1,643 @@
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('../fonts/quicksand-light-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+
+* {
+    margin: 0;
+}
+
+
+
+body {
+    font-size: 2rem;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+
+main {
+    height: 800px;
+}
+
+footer {
+    height: 120px;
+}
+
+
+header {
+    background-color: rgba(86, 162, 252,1);
+    height: 80px;
+    position: relative;
+    border-bottom: 1px solid darkgray;
+}
+
+
+.logocontainer {
+    width: 65px;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0; left: 0.25rem;
+}
+
+.logocontainer img {
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0; left: 0;
+}
+
+nav {
+    background-color: white;
+    border-top: 1px solid gray;
+    width: 100%;
+    position: fixed;        
+    bottom: 0;
+    z-index: 1000;
+    font-size: 1.5rem;
+    height: 80px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #666666;
+}
+
+nav ul a:active {
+    color: #56A2FC;
+}
+
+#linkaboutme {
+    position: absolute;
+    left: 17%; bottom: 5px;
+}
+
+#linkaboutme img {
+    display: block;
+    position: absolute;
+    left: 13%;
+    top: -50px;
+}
+
+#linkcourses {
+    position: absolute;
+    right: 17%; bottom: 5px;
+}
+
+#linkcourses img {
+    display: block;
+    position: absolute;
+    margin: auto;
+    right: 9%;
+    top: -50px;
+}
+
+
+main {
+    background-color: white;
+    position: relative;
+    height: 1200px;
+}
+
+main section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+}
+
+main .active {
+  z-index: 1;
+}
+
+main article, main .teacherphoto {
+    width: 100%;
+    float: none;
+    
+}
+
+main article {
+    background-color: unset;
+}
+
+
+#aboutme {
+    width: 100%;
+    height: 950px;
+    background-image: url(../images/backgroundmobile.jpeg);
+}
+
+#aboutme h1, #aboutme h2, #aboutme p {
+    font-family: 'quicksandlight', sans-serif;
+    margin: 2rem;
+}
+
+#aboutme h1 {
+    font-size: 3rem;
+}
+
+#aboutme h2 {
+    font-size: 2.5rem;
+}
+
+#aboutme p {
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+
+#aboutme article a {
+    text-decoration: none;
+    color: black; 
+}
+
+#aboutme article a:hover {
+    color: #56A2FC;
+}
+
+main .teacherphoto {
+    position: absolute;
+    margin: auto;
+    margin-top: 0;
+    bottom: 0;
+}
+
+main .teacherphoto img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    bottom: -5px;
+}
+
+.videocontainer {
+    margin: auto;
+    width: 95%;
+    background-color: bisque;
+    position: absolute;
+    bottom: -50px; left: 0; right: 0;
+    
+}
+
+iframe {
+    max-width: 100%;
+    height: 230px;
+    position: absolute;
+    bottom: 0; top: 0; left: 0; right: 0;
+    
+}
+
+#class1, #class2 {
+	width: 85%;
+    display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#class1 {
+	margin-top: 20px;
+}
+
+
+#courses {
+    width: 100%;
+    height: auto;
+    background-color: grey;
+}
+
+.course1, .course2, .course3, .course4 {
+    width: 90%;
+    height: 150px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 20px 40px;
+}
+
+.course2 {
+	font-weight: 900
+}
+
+.course1 {
+    margin-top: 3rem;
+    height: auto;
+    overflow: auto;
+}
+
+.course2, .course3, .course4 {
+    height: auto;
+    overflow: auto;
+}
+
+.courseheader {
+    background-color: white;
+    width: 100%;
+}
+
+#courses .imgbox {
+    max-width: 80px;
+    max-height: 80px;
+    float: left;
+}
+
+#courses .imgbox img {
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    left: 15%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#courses .titlebox {
+    width: 65%;
+    float: right;
+}
+
+#courses h3 {
+    font-family: 'quicksandlight', sans-serif;
+    font-size: 2rem; 
+    line-height: 75px;
+}
+
+#courses .course3 h3 {
+    font-size: 1.5rem;
+}
+
+
+
+#courses .descriptionbox {
+    width: 100%;
+	margin-bottom: 20px;
+}
+
+#courses .descriptionbox p {
+    font-family: 'quicksandlight', sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#contactbox {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    background-color: lightblue;
+    border-radius: 30px 15px;
+}
+
+#contactbox p, #contactbox h3 {
+    font-family: 'quicksandlight', sans-serif;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+
+#contactbox p {
+    line-height: 35px;
+    padding-bottom: 2rem;
+}
+
+
+
+footer {
+    background-color: white;
+	width: 100%;
+}
+
+.footerLike {
+	/*background-color: #343434;
+	position: relative;
+	bottom: 50px;
+	color: white;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;*/
+}
+
+.footerLike p {
+	/*width: 80%;
+	line-height: 20px;*/
+}
+
+@media screen and (max-width: 301px) {
+    footer {
+        height: 50px;
+    }
+    
+    #aboutme {
+        height: 925px;
+    }
+    
+    iframe {
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+
+    #courses .course3 h3 {
+        font-size: 2rem; 
+        padding-top: unset;
+        line-height: 75px;
+    }
+    
+}
+
+
+@media screen and (min-width: 386px) and (max-width: 423px) {
+    
+    main .teacherphoto  {
+        max-width: 95%;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    
+
+    
+    nav {
+        position: static;
+        float: right;
+        width: 200px;
+        height: 80px;
+        color: white;
+        background-color: #56A2FC;
+        border-top: none;
+        border-bottom: 1px solid darkgray;
+        overflow: hidden; 
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    
+    #linkaboutme, #linkcourses {
+    display: inline-block;
+    position: static;
+    }
+    
+    #linkaboutme {
+    margin-right: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    
+    #linkcourses {
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    
+    #linkaboutme:hover, #linkcourses:hover {
+    background-color: white;
+    color: #56A2FC;
+    }
+    
+    
+    
+    #linkcourses img, #linkaboutme img {
+    display: none;
+    }
+    
+    nav ul {
+        font-family: 'quicksandlight', sans-serif;
+        font-size: 1.5rem;
+        line-height: 80px;  
+    }
+    
+    nav ul li a {
+        color: white;
+    }
+    
+    main {
+        height: 850px;
+    }
+    
+    #aboutme {
+        height: 550px;
+        background-image: url(../images/backgroundoriginal.jpeg);
+    }
+    
+    main article {
+        width: 40%;
+        display: block;
+        float: left;
+    }
+    
+    #aboutme article p {
+        font-size: 1.5rem;
+    }
+
+    main .teacherphoto {
+        width: 55%;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 20px;
+        overflow: hidden;
+    
+    }
+    
+    iframe {
+        height: 260px;
+        width: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #courses .imgbox {
+        max-width: 80px;
+        max-height: 80px;
+        float: left;
+        margin-left: 1rem;
+    }
+    
+    #courses .titlebox {
+        position: absolute;
+        display: inline;
+        width: 200px;
+        padding-left: 3rem;
+    }
+    
+    #courses .titlebox h3 {
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    
+    main article {
+        width: 50%;
+        display: block;
+        float: left;
+    }
+    
+    #aboutme article {
+        margin-top: 3rem;
+    }
+    
+    #aboutme h1 {
+        width: 95%;
+    }
+    
+    #aboutme article p {
+        font-size: 2rem;
+    }
+    
+    main .teacherphoto {
+        width: 300px;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 20px;
+    
+    }
+    
+    nav {
+        width: 250px;
+    }
+    
+    nav ul {
+        font-family: 'quicksandlight', sans-serif;
+        font-size: 2rem;
+        line-height: 80px;  
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+    
+    main {
+        height: 800px;
+    }
+    
+    #aboutme article {
+        margin-left: 2rem;
+    }
+    
+    #aboutme h1 {
+        width: 50%;
+        margin-top: 7rem;
+        margin-left: 4rem;
+    }
+    
+    main .teacherphoto {
+        width: 350px;
+    }
+    
+    iframe {
+        height: 300px;
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 888px) {
+    
+    main {
+        height: 850px;
+    }
+    
+    #aboutme h1 {
+        margin-top: 8rem;
+        width: 57%;
+        font-size: 3.5rem;
+    }
+    
+    #aboutme article {
+        width: 57%; 
+        margin-top: 3.5rem;
+        
+    }
+    
+    #aboutme article p {
+        
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        line-height: 2.7rem
+    }
+    
+    
+    .background {
+        width: 90%;
+        margin: auto;
+        left: 0; right: 0;
+    }
+    
+    main .teacherphoto {
+        width: 350px;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 55%;
+    }
+    
+    iframe {
+        height: 300px;
+        width: 500px;
+        margin: 0 auto;
+    }  
+    
+
+}
+
+@media screen and (min-width: 1401px) {
+    
+    body {
+        background-color: gainsboro;
+    }
+    
+    footer {
+        height: 150px;
+    }
+    
+    main, header, footer {
+        width: 1200px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    
+    footer {
+        border-bottom: 1px solid black;
+    }
+}
+
+#demo {
+	position: unset;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 30px;
+	max-width: 85%;
+}
+
+
+
+
